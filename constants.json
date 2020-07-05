@@ -1,0 +1,28 @@
+{
+  "db_file_paths": {
+  },
+  "run": {
+    "usersim": false,
+    "warmup_mem": 10000,
+    "num_ep_run": 20000,
+    "train_freq": 50,
+    "max_round_num": 15,
+    "success_rate_threshold": 0.2
+  },
+  "agent": {
+    "save_weights_file_path": "weights/model.h5",
+    "load_weights_file_path": "weights/model.h5",
+    "vanilla": true,
+    "learning_rate": 1e-3,
+    "batch_size": 3,
+    "dqn_hidden_size": 10,
+    "epsilon_init": 0.0,
+    "gamma": 0.9,
+    "max_mem_size": 500000
+  },
+  "emc": {
+    "slot_error_mode": 0,
+    "slot_error_prob": 0.05,
+    "intent_error_prob": 0.0
+  }
+}
